@@ -1,0 +1,23 @@
+{
+  "author": "Jakub Oboza <jakub.oboza@gmail.com> (http://no-fucking-idea.com)",
+  "name": "scumbag.js",
+  "description": "thepiratebay.org proxy",
+  "version": "0.0.1",
+  "homepage": "http://no-fucking-idea.com",
+  "repository": {
+    "url": "http://not-yet"
+  },
+  "main": "scum.js",
+  "scripts": {
+    "test": "mocha -R landing spec/*.spec.js"
+  },
+  "dependencies": {
+    "express": ">= 2.5.8",
+    "ejs": ">= 0.7.1"
+    },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
