@@ -12,8 +12,11 @@
     "test": "mocha -R landing spec/*.spec.js"
   },
   "dependencies": {
-    "express": ">= 2.5.8",
-    "ejs": ">= 0.7.1"
+    "express":          ">= 2.5.8",
+    "ejs":              ">= 0.7.1",
+    "jsdom":            "= 0.2.14",
+    "html5":            "= 0.3.5",
+    "superagent":       ">= 0.0.0"
     },
   "devDependencies": {},
   "optionalDependencies": {},

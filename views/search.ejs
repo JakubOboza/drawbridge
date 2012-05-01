@@ -1,0 +1,9 @@
+<%- partial('_form') %>
+
+<ol>
+<% for(var i=0; i< results.length; i++) {%>
+   <li>
+     <a href="<%= results[i].torrent_link %>"> <%= results[i].name %> </a> (seeds: <%= results[i].seeds %> | leeches: <%= results[i].leeches %>)
+   </li>
+<% } %>
+</ol>
