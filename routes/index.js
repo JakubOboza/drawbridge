@@ -8,7 +8,7 @@ exports.index = function(req, res){
 
 function performSearch(query, result_callback){
 
-  request.get('http://thepiratebay.se/search/' + query + '/0/99/0').set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+  request.get('http://thepiratebay.se/search/' + query + '/0/7/0').set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
     .set("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.3")
     .set("Accept-Encoding", "gzip,deflate,sdch")
     .set("Connection", "keep-alive")
