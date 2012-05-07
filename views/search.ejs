@@ -3,7 +3,15 @@
 <ol>
 <% for(var i=0; i< results.length; i++) {%>
    <li>
-     <a href="<%= results[i].torrent_link %>"> <%= results[i].name %> </a> (seeds: <%= results[i].seeds %> | leeches: <%= results[i].leeches %>)
+      <%= results[i].name %> 
+      <% if(results[i].torrent_link) { %>
+        <a href="<%= results[i].torrent_link %>"></a> 
+      <% } %>
+      &nbsp;
+      <% if(results[i].magnet_link) { %>
+        <a href="<%= results[i].magnet_link %>"></a> 
+      <% } %>      
+      (seeds: <%= results[i].seeds %> | leeches: <%= results[i].leeches %>)
    </li>
 <% } %>
 </ol>

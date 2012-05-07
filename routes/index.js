@@ -32,10 +32,12 @@ function getTorrents(query, callback){
         var line = result_lines[i];
         var name = window.$( line ).find("div.detName a").html();
         var torrent_link = window.$(window.$( line ).find('[title="Download this torrent"]')); 
+        var magnet_link = window.$(window.$( line).find('[alt="Magnet link"]') );
         var seeds = window.$(line).find('[align="right"]');
           results.push({
             name: name,
             torrent_link:  torrent_link.attr('href'),
+            magnet_link: magnet_link.attr('href'),
             seeds: window.$(seeds[0]).html(),
             leeches: window.$(seeds[1]).html()
           });
