@@ -4,14 +4,12 @@
 <% for(var i=0; i< results.length; i++) {%>
    <li>
       <%= results[i].name %> 
-      <% if(true) { %>
-        <a href="<%= results[i].torrent_link %>"></a> 
+      <% if(esults[i].torrent_link) { %>
+        <a href="<%= results[i].torrent_link %>">Torrent</a> 
       <% } %>
       &nbsp;
-      <% if(true) { %>
-        <%- results[i].magnet_link %>
-        <%- results[i].torrent_link %>
-        <a href="<%= results[i].magnet_link %>"></a> 
+      <% if(results[i].magnet_link) { %>
+        <a href="<%= results[i].magnet_link %>">Magnet</a> 
       <% } %>      
       (seeds: <%= results[i].seeds %> | leeches: <%= results[i].leeches %>)
    </li>
