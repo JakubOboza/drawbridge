@@ -3,7 +3,11 @@ var drawbridge = require('../lib/drawbridge');
 var http       = require('http');
 
 exports.index = function(req, res){
-  res.render('index.ejs', { title: 'Scumbag.js' });
+  res.render('index.ejs', { title: 'Scumbag.tbp!' });
+};
+
+exports.about = function(req, res){
+  res.render('about.ejs', {title: 'About' });
 };
 
 function performSearch(query, result_callback){

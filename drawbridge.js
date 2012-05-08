@@ -25,7 +25,9 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
+app.get('/about', routes.about);
 app.post('/search', routes.search);
+
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
